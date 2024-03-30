@@ -1,0 +1,33 @@
+---
+title: How I Decide What Coffee to Drink
+---
+
+flowchart TD
+    A[Am I brewing coffee at home, or am I on the go?]
+    A --> B{On the go}
+    A --> C{At home}
+    C --> L
+    B --> E{Am I in a rush?}
+    E --> F{Yes}
+    G --> Home{{Make a flat white with your espresso machine.}}
+    F[Black coffee, from anywhere]
+    E --> G{No}
+    G --> InterveningG{{Go to a speciality coffee shop for your order}}
+    InteveningF --> L
+    InterveningG --> L{What time is it?}
+    L --> M{Early morning}
+    L --> N{Mid-morning}
+    L --> O{Early afternoon}
+    L --> P{Late afternoon}
+    N --> SpecialityCoffee[Am I in a speciality coffee shop?]
+    O --> SpecialityCoffee
+    SpecialityCoffee --> Y{Yes}
+    SpecialityCoffee --> Z{No}
+    Y --> AA[Pour over]
+    Z --> AB[Black coffee]
+    L --> Q{Evening}
+    Q --> R[Single espresso, with a meal.]
+    P --> S[This isn't the best time for coffee.]
+    M --> T[You can choose black coffee or a flat white.]
+    N --> T
+    O --> U[Black coffee, or espresso]
